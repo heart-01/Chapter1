@@ -6,6 +6,12 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'contact.html'
 })
 export class ContactPage {
+  
+  items = ["Siwat","Premruthai","Aun","Yanisa","Chanyanuch"]; // ประกาศตัวแปร Array ชื่อ items
+  
+  itemSelected(item : string){ // สร้างฟังชั่นหรือเมธอทชื่อ itemSelected มีพารามิเตอร์ ชื่อ item ชนิด String
+    console.log("Selected Item: ",item);
+  }
 
   constructor(public navCtrl: NavController) {
 

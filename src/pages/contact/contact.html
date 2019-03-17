@@ -17,3 +17,13 @@
     </button>    
   </ion-list>
 </ion-card>
+
+<<ion-content>
+  <ion-list-header>My Contacts</ion-list-header>
+  <button ion-item *ngFor="let i of items" (click)="itemSelected(i)" > 
+  <!-- คำสั่ง loop for นำข้อมูลของตัวแปร Array items มาอยู่ในตัวแปร i -->
+  <!-- คำสั่ง java script ของ angular เมื่อ click จะทำงานในเมธอท itemSelected ส่ง i เข้าไปใน พารามิเตอร์ item -->
+    {{i}} <!-- แสดงตัวแปร i -->
+  </button>
+</ion-content>
+
