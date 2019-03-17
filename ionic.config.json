@@ -1,5 +1,7 @@
 {
   "name": "Chapter1",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }
