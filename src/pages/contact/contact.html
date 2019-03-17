@@ -1,3 +1,4 @@
+<!--
 <ion-card>
   <ion-card-header id="menu">
     Menu
@@ -17,13 +18,26 @@
     </button>    
   </ion-list>
 </ion-card>
+-->
 
-<<ion-content>
+<ion-content>
+  <ion-list>
   <ion-list-header>My Contacts</ion-list-header>
+  <!--
   <button ion-item *ngFor="let i of items" (click)="itemSelected(i)" > 
-  <!-- คำสั่ง loop for นำข้อมูลของตัวแปร Array items มาอยู่ในตัวแปร i -->
-  <!-- คำสั่ง java script ของ angular เมื่อ click จะทำงานในเมธอท itemSelected ส่ง i เข้าไปใน พารามิเตอร์ item -->
-    {{i}} <!-- แสดงตัวแปร i -->
+   คำสั่ง loop for นำข้อมูลของตัวแปร Array items มาอยู่ในตัวแปร i 
+   คำสั่ง java script ของ angular เมื่อ click จะทำงานในเมธอท itemSelected ส่ง i เข้าไปใน พารามิเตอร์ item 
+    {{i}}  แสดงตัวแปร i 
   </button>
+  -->
+    <ion-item *ngFor="let i of items">
+      <ion-avatar item-start>
+        <img src="assets/imgs/{{i.avatar}}" alt=""> <!-- ดึงข้อมูล avatar จาก Array items ที่ Object avatar  -->
+      </ion-avatar>
+      <h2>{{i.name}}</h2>
+      <p>{{i.tel}}</p>
+
+    </ion-item>
+  </ion-list>
 </ion-content>
 
